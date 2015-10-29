@@ -1,8 +1,7 @@
-The Sieve of Eratosthenes in brainfuck
+The Sieve of Eratosthenes in Brainfuck
 
 (I use semicolons instead of commas and periods so that I don't break the validity of the code)
-The program prints primes up to N; which it reads from input as ASCII; although it outputs "real" numbers;
-
+The program prints primes up to N; which it reads from input (terminated by 0)
 Memory cells are divided into groups of five; each group represents one number
 Each cell of the group has a certain function:
 1: The number itself
@@ -12,8 +11,12 @@ Each cell of the group has a certain function:
 5: Temporary value
 
 THE PROGRAM ITSELF
->>>>>>>>>>
->>>,
+>>>>>>>>>>>>>
+Print "Enter a number:" and read input
++++++++++++[->++++++>++++++++++>+++++++++>+++<<<<]>+++.>.++++
+++.>++.<--.>>-.<----.>.<<----.+++++++.--------.>+.+++.<+++++.
+<-----------.>>>.[-]<[-]<[-]<[-]+[[-]>[-],[+[-----------[>[-]
+++++++[-<------>]<--<<[->>++++++++++<<]>>[-<<+>>]<+>]]]<]<
 Initialization
 [->+>+<<]>>[-<<+>>]<-
 [<<+>
@@ -57,8 +60,9 @@ Output (printing ASCII as numbers adapted from elsewhere)
 <<<<<[<<<<<]>>>>>
 [>>[-]+<[[-]>-<]>[
 <<
-<[-]<[-]<[-]<[-]<[-]<[-]<[-]<[-]<[-]>>>>>>>
+<[-]<[-]<[-]<[-]<[-]<[-]<[-]<[-]<[-]++++++++++.[-] Newline before the number
+>>>>>>>
 ++++++++++>>[-<+<-[<+<<]<[+[->+<]<+<<]>>>>>>]<<[-]<<<++++++++++>[-<-[<+<<]<[+[- >+<]<+<<]>>>>>]<[-]<<[<++++++[->++++++++<]>.>>+<+<[-]]>[>[-<->]++++++[-<++++++++>]<.[-]]>>++++++[->++++++++<]>.[-]>>[->+<]>
->++++++++++. Add a newline
+>
 >-]
 >>>]
